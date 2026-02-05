@@ -59,7 +59,7 @@ export default function Register() {
         </section>
 
         <section className="mt-8 px-4 mx-auto w-full max-w-md">
-            <div>
+            <div className="form-container">
             <form
                 onSubmit={(event) => {
                 handleSubmit(event);

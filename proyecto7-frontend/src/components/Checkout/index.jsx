@@ -62,14 +62,15 @@ export default function Checkout() {
     return (
         <>
         <div className="max-w-4xl mx-4 py-8 md:mx-auto">
-            <h1 className="text-3xl font-bold mt-8">Carrito</h1>
+            <h1 className="text-3xl font-bold mt-8 mb-6">🛒 Carrito</h1>
 
-            <form className="mt-12">
+            <form className="mt-12 space-y-6">
+            <div className="form-container">
             <ul>
                 {cart.map((e) => {
                 return (
-                    <li key={e._id} className="flex py-10">
-                    <figure>
+                    <li key={e._id} className="flex py-6 border-b last:border-b-0">
+                    <figure className="flex-shrink-0">
                         <img
                         src={e.img}
                         alt={e.name}
@@ -80,10 +81,10 @@ export default function Checkout() {
                     <div className="relative ml-4 flex-1 flex flex-col justify-between sm:ml-6">
                         <div className="flex justify-between sm:grid sm:grid-cols-2">
                         <div className="pr-6">
-                            <h3 className="text-sm">{e.name}</h3>
+                            <h3 className="text-sm font-semibold text-gray-900">{e.name}</h3>
                         </div>
 
-                        <p className="text-sm font-medium text-gray-900 text-right">
+                        <p className="text-sm font-bold text-emerald-600 text-right">
                             {formatCLP(e.price * e.quantity)}
                         </p>
                         </div>
@@ -96,7 +97,7 @@ export default function Checkout() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="block border border-gray-300 px-2 py-1 text-sm"
+                            className="block border border-gray-300 px-2 py-1 text-sm rounded-md"
                         >
                             {Array(5)
                             .fill(null)
@@ -120,7 +121,7 @@ export default function Checkout() {
                             onClick={(evt) => {
                             handleRemove(evt, e.priceID);
                             }}
-                            className="text-sm font-sm ml-4 md:ml-0 mt-2 text-brand-purple"
+                            className="text-sm font-semibold ml-4 md:ml-0 mt-2 text-red-600 hover:text-red-800 transition"
                         >
                             <span>Eliminar</span>
                         </button>
@@ -130,18 +131,19 @@ export default function Checkout() {
                 );
                 })}
             </ul>
+            </div>
 
-            <div className="bg-gray-100 px-4 py-6 sm:p-6 lg:p-8">
+            <div className="form-container">
                 <div>
-                <dl className="-my-4 text-sm ">
+                <dl className="text-sm ">
                     <div className="py-4 flex items-center justify-between">
-                    <dt className="font-bold">Total</dt>
-                    <dd className="">{formatCLP(total)}</dd>
+                    <dt className="font-bold text-gray-900">Total</dt>
+                    <dd className="text-lg font-bold text-emerald-600">{formatCLP(total)}</dd>
                     </div>
                 </dl>
                 </div>
             </div>
-            <div className="mt-10">
+            <div className="mt-6">
                 <button
                 onClick={(e) => {
                     handleSubmit(e);

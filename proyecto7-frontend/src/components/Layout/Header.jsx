@@ -33,12 +33,12 @@ export default function Header() {
     }, [cart]);
 
     return (
-        <header className="bg-green-600">
+        <header className="bg-gradient-to-r from-green-600 via-yellow-400 to-blue-500">
         <nav className="flex justify-between mx-8 py-4">
             <ul className="flex items-center">
-            <li className="hidden ml-10 text-neutral-100 md:block">
-                <Link to="/platos" className="font-medium">
-                Platos
+            <li className="hidden ml-10 md:block">
+                <Link to="/platos" className="font-bold text-white text-lg">
+                Sabores do Brasil
                 </Link>
             </li>
             </ul>

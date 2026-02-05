@@ -48,7 +48,7 @@ export default function Login() {
         </section>
 
         <section className="mt-8 px-4 mx-auto w-full max-w-md">
-            <div>
+            <div className="form-container">
             <form
                 className="space-y-6"
                 onSubmit={(e) => {

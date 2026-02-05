@@ -48,18 +48,18 @@ export default function Profile() {
     return (
         <>
         <div className="mx-auto py-4 px-8">
-            <div className="space-y-16 ">
-            <section>
+            <div className="space-y-16 max-w-4xl mx-auto">
+            <section className="form-container">
                 <form
                 onSubmit={(e) => {
                     sendData(e);
                 }}
                 >
                 <div className="">
-                    <div className="px-4">
+                    <div className="">
                     <div>
-                        <h2 className="text-3xl font-bold mt-8">Tu perfil</h2>
-                        <p className="mt-2 mb-8 text-sm">
+                        <h2 className="text-3xl font-bold">Tu perfil</h2>
+                        <p className="mt-2 mb-8 text-sm text-gray-600">
                         Recuerda que estás en un proyecto académico. No coloques
                         información real. 😉
                         </p>
@@ -67,7 +67,7 @@ export default function Profile() {
 
                     <div className="mt-6 grid grid-cols-4 gap-6">
                         <div className="col-span-4 sm:col-span-2">
-                        <label className="form-label">Tu nombre de usuario</label>
+                        <label className="form-label font-semibold">Tu nombre de usuario</label>
                         <input
                             type="text"
                             name="username"
@@ -75,12 +75,12 @@ export default function Profile() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="form-input"
+                            className="form-input rounded-md"
                         />
                         </div>
 
                         <div className="col-span-4 sm:col-span-2">
-                        <label className="form-label">Tu email</label>
+                        <label className="form-label font-semibold">Tu email</label>
                         <input
                             disabled
                             type="email"
@@ -89,12 +89,12 @@ export default function Profile() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="form-input"
+                            className="form-input rounded-md bg-gray-100"
                         />
                         </div>
 
                         <div className="col-span-4 sm:col-span-2">
-                        <label className="form-label">Tu país</label>
+                        <label className="form-label font-semibold">Tu país</label>
                         <input
                             type="text"
                             name="country"
@@ -102,12 +102,12 @@ export default function Profile() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="form-input"
+                            className="form-input rounded-md"
                         />
                         </div>
 
                         <div className="col-span-4 sm:col-span-1">
-                        <label className="form-label">
+                        <label className="form-label font-semibold">
                             <span>Código postal</span>
                         </label>
                         <input
@@ -117,12 +117,12 @@ export default function Profile() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="form-input"
+                            className="form-input rounded-md"
                         />
                         </div>
 
                         <div className="col-span-4 sm:col-span-3">
-                        <label className="form-label">Dirección</label>
+                        <label className="form-label font-semibold">Dirección</label>
                         <input
                             type="text"
                             name="address"
@@ -130,13 +130,13 @@ export default function Profile() {
                             onChange={(e) => {
                             handleChange(e);
                             }}
-                            className="form-input"
+                            className="form-input rounded-md"
                         />
                         </div>
                     </div>
                     </div>
-                    <div className="mt-8 px-4 py-3">
-                    <button type="submit" className="form-button w-auto">
+                    <div className="mt-8 py-3">
+                    <button type="submit" className="form-button">
                         Guardar cambios
                     </button>
                     </div>
