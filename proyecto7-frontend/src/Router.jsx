@@ -23,6 +23,7 @@ const Router = () => {
                         <Route path="/" element={<Layout />}>
                             <Route index element={<Home />} />
                             <Route path="/platos" element={<DishList />} />
+                            <Route path="/platos/region/:region" element={<DishList />} />
                             <Route path="/platos/:slug" element={<SingleDish />} />
                             <Route path="/registro" element={<Register />} />
                             <Route path="/pago-exitoso" element={<SuccessPage />} />

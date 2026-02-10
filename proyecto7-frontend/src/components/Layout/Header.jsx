@@ -38,7 +38,7 @@ export default function Header() {
             <ul className="flex items-center">
             <li className="hidden ml-10 md:block">
                 <Link to="/platos" className="font-bold text-white text-lg">
-                Sabores do Brasil
+                Restaurante Sabor do Brasil
                 </Link>
             </li>
             </ul>
