@@ -38,7 +38,7 @@ export default function Header() {
             <ul className="flex items-center">
             <li className="hidden ml-10 md:block">
                 <Link to="/platos" className="font-bold text-white text-lg">
-                Restaurante Sabor do Brasil
+                Menú
                 </Link>
             </li>
             </ul>
@@ -82,7 +82,7 @@ export default function Header() {
             ) : (
                 <>
                 <Link to="/registro" className="btn-nav">
-                    Crear cuenta
+                    Registrarse
                 </Link>
                 <Link to="/iniciar-sesion" className="btn-nav">
                     Iniciar sesión
