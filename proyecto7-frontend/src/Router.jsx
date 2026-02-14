@@ -13,6 +13,8 @@ import Profile from "./components/Profile";
 import Checkout from "./components/Checkout";
 import SuccessPage from "./components/SuccessPage";
 import CancelPage from "./components/ErrorPage";
+import ViajaBrasilPage from "./components/ViajaBrasilPage";
+import Agradecimientos from "./components/Agradecimientos";
 
 const Router = () => {
     return (
@@ -24,7 +26,10 @@ const Router = () => {
                             <Route index element={<Home />} />
                             <Route path="/platos" element={<DishList />} />
                             <Route path="/platos/region/:region" element={<DishList />} />
+                            <Route path="/region/:region" element={<DishList />} />
                             <Route path="/platos/:slug" element={<SingleDish />} />
+                            <Route path="/viaja-brasil" element={<ViajaBrasilPage />} />
+                            <Route path="/agradecimientos-docentes" element={<Agradecimientos />} />
                             <Route path="/registro" element={<Register />} />
                             <Route path="/pago-exitoso" element={<SuccessPage />} />
                             <Route path="/pago-cancelado" element={<CancelPage />} />

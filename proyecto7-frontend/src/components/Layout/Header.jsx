@@ -34,23 +34,47 @@ export default function Header() {
 
     return (
         <header className="bg-gradient-to-r from-green-600 via-yellow-400 to-blue-500">
-        <nav className="flex justify-between mx-8 py-4">
+        <nav className="flex items-center justify-between gap-2 mx-3 md:mx-8 py-3 md:py-4">
             <ul className="flex items-center">
-            <li className="hidden ml-10 md:block">
-                <Link to="/platos" className="font-bold text-white text-lg">
-                Menú
+            <li className="ml-1 md:ml-4">
+                <Link
+                    to="/agradecimientos-docentes"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/80 bg-white/10 hover:bg-white/20 transition-all duration-300"
+                    aria-label="Ir a agradecimientos al cuerpo docente"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 48"
+                        className="w-6 h-6"
+                        aria-hidden="true"
+                    >
+                        <rect x="4" y="8" width="40" height="32" rx="4" className="fill-emerald-600" />
+                        <polygon points="24,13 37,24 24,35 11,24" className="fill-yellow-300" />
+                        <circle cx="24" cy="24" r="5.8" className="fill-blue-600" />
+                        <path d="M18.5 24c1.8-1.6 3.6-2.3 5.5-2.3 1.9 0 3.7.7 5.5 2.3" className="fill-none stroke-white stroke-[1.3]" />
+                    </svg>
+                </Link>
+            </li>
+            <li className="ml-2 md:ml-10">
+                <Link to="/platos" className="font-bold text-white text-sm md:text-lg">
+                Menú Completo
+                </Link>
+            </li>
+            <li className="ml-4 md:ml-8">
+                <Link to="/viaja-brasil" className="font-bold text-white text-sm md:text-lg">
+                Viaja por Brasil
                 </Link>
             </li>
             </ul>
 
-            <section className="flex items-center justify-end">
+            <section className="flex items-center justify-end gap-1 md:gap-0 shrink-0">
             {authStatus ? (
                 <>
-                <Link to="/perfil" className="btn-nav">
+                <Link to="/perfil" className="btn-nav ml-2 md:ml-4 px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm lg:text-base">
                     Perfil
                 </Link>
 
-                <Link to="/" className="btn-nav" onClick={logout}>
+                <Link to="/" className="btn-nav ml-2 md:ml-4 px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm lg:text-base" onClick={logout}>
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -67,7 +91,7 @@ export default function Header() {
                     </svg>
                 </Link>
 
-                <Link to="/carrito" className="btn-cart">
+                <Link to="/carrito" className="btn-cart ml-2 md:ml-4">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -81,10 +105,10 @@ export default function Header() {
                 </>
             ) : (
                 <>
-                <Link to="/registro" className="btn-nav">
+                <Link to="/registro" className="btn-nav ml-2 md:ml-4 px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm lg:text-base">
                     Registrarse
                 </Link>
-                <Link to="/iniciar-sesion" className="btn-nav">
+                <Link to="/iniciar-sesion" className="btn-nav ml-2 md:ml-4 px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm lg:text-base">
                     Iniciar sesión
                 </Link>
                 </>
