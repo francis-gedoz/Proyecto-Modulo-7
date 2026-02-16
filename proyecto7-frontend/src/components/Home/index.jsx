@@ -36,7 +36,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-12/12 flex justify-center md:justify-end">
+                    <div className="w-full md:w-12/12 flex items-center justify-center md:justify-end">
                         <div className="w-full md:w-[150%] h-64 md:h-[480px] rounded-md overflow-hidden shadow-lg">
                             <img src={encabezado} alt="Encabezado Brasil" className="w-full h-full object-cover object-center" />
                         </div>

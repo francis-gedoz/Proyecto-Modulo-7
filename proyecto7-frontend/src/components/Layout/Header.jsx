@@ -38,9 +38,9 @@ export default function Header() {
             <ul className="flex items-center">
             <li className="ml-1 md:ml-4">
                 <Link
-                    to="/agradecimientos-docentes"
+                    to="/"
                     className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/80 bg-white/10 hover:bg-white/20 transition-all duration-300"
-                    aria-label="Ir a agradecimientos al cuerpo docente"
+                    aria-label="Volver a la página principal"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -56,13 +56,18 @@ export default function Header() {
                 </Link>
             </li>
             <li className="ml-2 md:ml-10">
+                <Link to="/viaja-brasil" className="font-bold text-white text-sm md:text-lg">
+                Viaja por Brasil
+                </Link>
+            </li>
+            <li className="ml-4 md:ml-8">
                 <Link to="/platos" className="font-bold text-white text-sm md:text-lg">
                 Menú Completo
                 </Link>
             </li>
             <li className="ml-4 md:ml-8">
-                <Link to="/viaja-brasil" className="font-bold text-white text-sm md:text-lg">
-                Viaja por Brasil
+                <Link to="/udd-4.0" target="_blank" rel="noopener noreferrer" className="font-bold text-white text-sm md:text-lg">
+                UDD 4.0
                 </Link>
             </li>
             </ul>

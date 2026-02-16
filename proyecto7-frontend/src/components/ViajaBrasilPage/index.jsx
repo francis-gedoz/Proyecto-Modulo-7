@@ -135,31 +135,27 @@ const ViajaBrasilPage = () => {
                     />
                 </div>
 
-                <div className={esPar ? "md:order-2 md:col-span-7" : "md:order-1 md:col-span-7"}>
+                <div className={esPar ? "md:order-2 md:col-span-7 flex" : "md:order-1 md:col-span-7 flex"}>
+                    <div className="w-full max-w-3xl">
                     <p className="text-xs uppercase tracking-[0.2em] text-neutral-500 mb-2">
-                    {region.nombre}
+                        {region.nombre}
                     </p>
                     <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight mb-2">
-                    {region.titulo}
+                        {region.titulo}
                     </h2>
-                    <p className="text-neutral-600 text-base md:text-lg leading-relaxed max-w-3xl">
-                    {region.descripcion}
+                    <p className="text-neutral-600 text-base md:text-lg leading-relaxed">
+                        {region.descripcion}
                     </p>
-                    <button
-                    type="button"
-                    onClick={() => irASiguienteSeccion(index)}
-                    className="group mt-4 inline-flex items-center justify-center rounded-full border border-neutral-300 px-8 py-3 text-sm font-medium text-neutral-800 hover:bg-neutral-900 hover:text-white transition-all duration-300"
-                    >
-                    <span>{esUltima ? "Volver al inicio" : "Seguir leyendo"}</span>
-                    <span
-                        className={`ml-2 text-base leading-none transition-transform duration-300 ${
-                        esUltima ? "group-hover:-translate-y-0.5" : "group-hover:translate-y-0.5"
-                        }`}
-                        aria-hidden="true"
-                    >
-                        {esUltima ? "↑" : "↓"}
-                    </span>
-                    </button>
+                    <div className="mt-4 flex justify-center">
+                        <button
+                        type="button"
+                        onClick={() => irASiguienteSeccion(index)}
+                        className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-8 py-3 text-sm font-medium text-neutral-800 hover:bg-neutral-900 hover:text-white transition-all duration-300"
+                        >
+                        <span>{esUltima ? "Volver al inicio" : "Seguir leyendo"}</span>
+                        </button>
+                    </div>
+                    </div>
                 </div>
                 </div>
             </section>

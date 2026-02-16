@@ -1,9 +1,9 @@
-const Agradecimientos = () => {
+const UDD40Page = () => {
     return (
         <main className="min-h-screen bg-neutral-50 px-6 py-20 flex items-center justify-center">
             <section className="w-full max-w-4xl bg-white border border-neutral-200 rounded-2xl shadow-sm p-8 md:p-12 text-left">
                 <h1 className="text-3xl md:text-4xl font-semibold text-neutral-900 leading-tight mb-6 text-center">
-                    Mensaje de agradecimiento
+                    Agradecimientos
                 </h1>
 
                 <div className="space-y-5 text-neutral-700 text-base md:text-lg leading-relaxed">
@@ -17,6 +17,7 @@ const Agradecimientos = () => {
                         <p><strong>Matías Molina (Coach Instructor)</strong></p>
                         <p><strong>Marcelo Diaz (Coach de Comunidad)</strong></p>
                         <p><strong>Jesús Martínez (Coach de Aprendizaje)</strong></p>
+                        <p><strong>Karla Espinoza (Coach de Aprendizaje)</strong></p>
                     </div>
 
                     <p>
@@ -48,4 +49,4 @@ const Agradecimientos = () => {
     );
 };
 
-export default Agradecimientos;
+export default UDD40Page;
