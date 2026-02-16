@@ -3,6 +3,10 @@
 Proyecto fullstack para un restaurante brasileño con menu de platos típicos por regiones, carrito de compras, autenticacion de usuario y pagos con Stripe.
 El frontend esta hecho con React + Vite y el backend con Express + MongoDB.
 
+## Live Deploy en Render.com:
+
+https://proyecto-modulo-7-1.onrender.com/
+
 ## Demo local (pantallas principales)
 
 - Home con seleccion de region y acceso al menu.
