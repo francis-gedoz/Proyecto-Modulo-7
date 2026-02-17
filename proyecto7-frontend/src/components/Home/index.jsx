@@ -14,13 +14,13 @@ const Home = () => {
 
     return (
         <>
-            <main className="mx-4 md:mx-8 mt-8">
-                <section className="mt-16 flex flex-col-reverse md:flex-row items-center md:items-stretch gap-8 min-h-[70vh]">
+            <main className="mx-4 md:mx-8 mt-4 md:mt-8">
+                <section className="mt-8 md:mt-16 flex flex-col-reverse md:flex-row items-center md:items-stretch gap-8 md:gap-10 min-h-[60vh] md:min-h-[70vh]">
                     <div className="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
-                        <h1 className="text-[2.4rem] md:text-[3.25rem] font-extrabold text-gray-900 leading-tight">Restaurante<br />Sabor do Brasil</h1>
-                        <p className="mt-4 text-gray-500 max-w-xl">Accede a nuestra variada gastronomía brasileña</p>
+                        <h1 className="text-5xl sm:text-[3rem] md:text-[3.25rem] font-extrabold text-gray-900 leading-tight">Restaurante<br />Sabor do Brasil</h1>
+                        <p className="mt-3 md:mt-4 text-gray-500 text-base md:text-lg max-w-xl">Accede a nuestra variada gastronomía brasileña</p>
 
-                        <div className="mt-10 w-full max-w-xs mx-auto">
+                        <div className="mt-7 md:mt-10 w-full max-w-sm mx-auto">
                             <select
                                 defaultValue=""
                                 onChange={handleRegionChange}
@@ -37,7 +37,7 @@ const Home = () => {
                     </div>
 
                     <div className="w-full md:w-12/12 flex items-center justify-center md:justify-end">
-                        <div className="w-full md:w-[150%] h-64 md:h-[480px] rounded-md overflow-hidden shadow-lg">
+                        <div className="w-full md:w-[150%] h-56 sm:h-72 md:h-[480px] rounded-md overflow-hidden shadow-lg">
                             <img src={encabezado} alt="Encabezado Brasil" className="w-full h-full object-cover object-center" />
                         </div>
                     </div>

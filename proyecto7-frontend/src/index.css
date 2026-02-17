@@ -9,7 +9,7 @@
     }
 
     .btn-nav {
-        @apply bg-transparent border border-white px-4 py-2 font-medium text-white ml-4 lg:px-4 rounded-md;
+        @apply bg-transparent border border-white px-4 py-2 font-medium text-white lg:px-4 rounded-md;
     }
     .btn-nav:hover {
         @apply bg-white text-green-700;
@@ -36,7 +36,7 @@
     }
 
     .btn-cart {
-        @apply ml-4 flex items-center;
+        @apply flex items-center;
     }
     .btn-cart-quantity {
         @apply ml-2 text-sm font-medium;
