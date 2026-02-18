@@ -87,7 +87,7 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/udd-4.0" target="_blank" rel="noopener noreferrer" className="font-bold text-white text-lg whitespace-nowrap">
+                                <Link to="/udd-4.0" className="font-bold text-white text-lg whitespace-nowrap">
                                     UDD 4.0
                                 </Link>
                             </li>
@@ -171,7 +171,7 @@ export default function Header() {
                             <Link to="/platos" onClick={closeMobileMenu} className="font-semibold py-2 px-2 rounded-md hover:bg-white/20">
                                 Menú Completo
                             </Link>
-                            <Link to="/udd-4.0" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="font-semibold py-2 px-2 rounded-md hover:bg-white/20">
+                            <Link to="/udd-4.0" onClick={closeMobileMenu} className="font-semibold py-2 px-2 rounded-md hover:bg-white/20">
                                 UDD 4.0
                             </Link>
                         </div>
