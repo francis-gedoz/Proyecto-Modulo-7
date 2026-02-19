@@ -8,6 +8,10 @@ https://proyecto-modulo-7-1.onrender.com/
 
 Este proyecto busca transmitir la cercanía de la cultura brasileña a través de su cocina: cada región refleja historia, identidad y tradición en sus sabores. La experiencia fue diseñada para que quien navegue el sitio no solo vea platos, sino que conecte con una forma de vivir la gastronomía como encuentro, memoria y diversidad cultural.
 
+
+![Texto descriptivo](https://github.com/francis-gedoz/Proyecto-Modulo-7/blob/master/home.jpg)
+
+
 > Este proyecto fue desarrollado únicamente con fines académicos.
 
 ## Estado actual
